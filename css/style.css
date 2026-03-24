@@ -1085,6 +1085,18 @@ footer h4 {
 .footer-bottom a:hover { color: rgba(255,255,255,0.8); }
 
 /* =============================================
+   FAQ DETAILS/SUMMARY
+   ============================================= */
+details summary::-webkit-details-marker { display: none; }
+details[open] summary span { transform: rotate(45deg); display: inline-block; }
+details[open] { box-shadow: 0 4px 20px rgba(30,58,47,0.08); }
+
+/* OVER MIJ GRID RESPONSIVE */
+@media (max-width: 760px) {
+  .over-mij-mini-grid { grid-template-columns: 1fr !important; }
+}
+
+/* =============================================
    ANIMATIES
    ============================================= */
 [data-fade] {
