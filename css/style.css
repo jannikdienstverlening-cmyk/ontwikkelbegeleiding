@@ -1126,6 +1126,10 @@ details[open] { box-shadow: 0 4px 20px rgba(30,58,47,0.08); }
   .contact-grid { grid-template-columns: 1fr; }
   .formulier-kaart { position: static; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
+  /* Aanbod dienst-grids */
+  [style*="grid-template-columns:1fr 1fr"][style*="gap:56px"] { grid-template-columns: 1fr !important; }
+  /* Vertrouwen kaartjes over-mij */
+  [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 720px) {
