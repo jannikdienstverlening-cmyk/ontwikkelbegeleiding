@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedankt! | Ontwikkel Begeleiding</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237BAF7A'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='18'>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="hoofdnav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <div class="logo-leaf"></div>
+      Ontwikkel<span style="color:#7BAF7A;"> Begeleiding</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/over-mij">Over Rianne</a></li>
+      <li><a href="/aanbod">Aanbod</a></li>
+      <li><a href="/voor-wie">Voor wie?</a></li>
+      <li><a href="/contact" class="nav-cta">Gratis kennismaken</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="bedankt-sectie">
+  <div class="container">
+    <div class="bedankt-kaart" data-fade>
+      <div class="bedankt-icon">🌱</div>
+      <h1>Bedankt voor je bericht!</h1>
+      <p>Ik heb je bericht ontvangen en neem zo snel mogelijk contact met je op — meestal binnen 1 à 2 werkdagen.</p>
+      <p>Tot dan — en fijn dat je de stap gezet hebt. Dat is al het begin van iets moois.</p>
+      <p style="font-family:'Playfair Display',Georgia,serif;font-style:italic;color:#4A8A5A;margin-top:24px;">— Rianne</p>
+      <a href="/" class="btn btn-secundair" style="margin-top:32px;">Terug naar de homepage</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faders = document.querySelectorAll('[data-fade]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('zichtbaar'); observer.unobserve(e.target); }});
+  }, { threshold: 0.1 });
+  faders.forEach(f => observer.observe(f));
+</script>
+</body>
+</html>

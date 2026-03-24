@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/over-mij",             "destination": "/over-mij.html" },
+    { "source": "/aanbod",               "destination": "/aanbod.html" },
+    { "source": "/voor-wie",             "destination": "/voor-wie.html" },
+    { "source": "/contact",              "destination": "/contact.html" },
+    { "source": "/bedankt",             "destination": "/bedankt.html" },
+    { "source": "/privacy",             "destination": "/privacy.html" },
+    { "source": "/algemene-voorwaarden", "destination": "/algemene-voorwaarden.html" }
+  ]
+}
