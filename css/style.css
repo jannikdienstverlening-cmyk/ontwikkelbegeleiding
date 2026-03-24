@@ -1,6 +1,6 @@
 /* =============================================
    Ontwikkel Begeleiding — Stylesheet 2026
-   Kleuren: zachtgroen #7BAF7A | beige #F5F0E8 | oranje #E8894A | tekst #2E2E2E
+   Kleuren: zachtgroen #A8CABA | beige #F5F0E8 | oranje #FF9F1C | tekst #2E2E2E
    ============================================= */
 
 /* --- RESET & BASE --- */
@@ -29,7 +29,7 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', Georgia, serif;
   line-height: 1.25;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3rem); }
@@ -40,8 +40,8 @@ p { margin-bottom: 1rem; color: #4A4A4A; }
 p:last-child { margin-bottom: 0; }
 
 /* --- KLEUREN HULPKLASSEN --- */
-.groen { color: #4A8A5A; }
-.oranje { color: #E8894A; }
+.groen { color: #3D7A5A; }
+.oranje { color: #FF9F1C; }
 
 /* =============================================
    NAVIGATIE
@@ -68,7 +68,7 @@ p:last-child { margin-bottom: 0; }
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #1E3A2F;
+  color: #2A4D3C;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -78,7 +78,7 @@ p:last-child { margin-bottom: 0; }
 .logo-leaf {
   width: 34px;
   height: 34px;
-  background: #7BAF7A;
+  background: #A8CABA;
   border-radius: 50% 10% 50% 10%;
   display: flex;
   align-items: center;
@@ -107,15 +107,15 @@ p:last-child { margin-bottom: 0; }
   left: 0;
   width: 0;
   height: 2px;
-  background: #7BAF7A;
+  background: #A8CABA;
   transition: width 0.2s;
 }
 
-.nav-links a:hover { color: #1E3A2F; }
+.nav-links a:hover { color: #2A4D3C; }
 .nav-links a:hover::after { width: 100%; }
 
 .nav-cta {
-  background: #E8894A !important;
+  background: #FF9F1C !important;
   color: white !important;
   padding: 10px 20px;
   border-radius: 50px;
@@ -126,7 +126,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav-cta::after { display: none !important; }
-.nav-cta:hover { background: #d47a3c !important; transform: translateY(-1px); }
+.nav-cta:hover { background: #e08a00 !important; transform: translateY(-1px); }
 
 .nav-hamburger {
   display: none;
@@ -142,7 +142,7 @@ p:last-child { margin-bottom: 0; }
   display: block;
   width: 24px;
   height: 2px;
-  background: #1E3A2F;
+  background: #2A4D3C;
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -156,7 +156,7 @@ p:last-child { margin-bottom: 0; }
   right: 0;
   z-index: 99;
   padding: 12px 20px;
-  background: #E8894A;
+  background: #FF9F1C;
   text-align: center;
 }
 
@@ -184,25 +184,25 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn-primair {
-  background: #E8894A;
+  background: #FF9F1C;
   color: white;
   box-shadow: 0 4px 20px rgba(232, 137, 74, 0.35);
 }
 
 .btn-primair:hover {
-  background: #d47a3c;
+  background: #e08a00;
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(232, 137, 74, 0.45);
 }
 
 .btn-secundair {
   background: transparent;
-  color: #4A8A5A;
-  border: 2px solid #7BAF7A;
+  color: #3D7A5A;
+  border: 2px solid #A8CABA;
 }
 
 .btn-secundair:hover {
-  background: #7BAF7A;
+  background: #A8CABA;
   color: white;
   transform: translateY(-2px);
 }
@@ -254,7 +254,7 @@ p:last-child { margin-bottom: 0; }
   gap: 8px;
   background: rgba(123, 175, 122, 0.15);
   border: 1px solid rgba(123, 175, 122, 0.4);
-  color: #4A8A5A;
+  color: #3D7A5A;
   font-size: 0.82rem;
   font-weight: 600;
   padding: 6px 14px;
@@ -292,7 +292,7 @@ p:last-child { margin-bottom: 0; }
 .check-icon {
   width: 22px;
   height: 22px;
-  background: #7BAF7A;
+  background: #A8CABA;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -313,7 +313,7 @@ p:last-child { margin-bottom: 0; }
 .hero-kaart h2 {
   font-size: 1.2rem;
   margin-bottom: 6px;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 .kaart-sub {
@@ -353,7 +353,7 @@ p:last-child { margin-bottom: 0; }
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border-color: #7BAF7A;
+  border-color: #A8CABA;
   background: white;
 }
 
@@ -365,7 +365,7 @@ p:last-child { margin-bottom: 0; }
 .form-submit {
   width: 100%;
   padding: 15px;
-  background: #E8894A;
+  background: #FF9F1C;
   color: white;
   border: none;
   border-radius: 50px;
@@ -378,7 +378,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .form-submit:hover {
-  background: #d47a3c;
+  background: #e08a00;
   transform: translateY(-1px);
 }
 
@@ -399,7 +399,7 @@ p:last-child { margin-bottom: 0; }
   padding: 10px 14px;
   margin-bottom: 20px;
   font-size: 0.82rem;
-  color: #4A8A5A;
+  color: #3D7A5A;
   font-weight: 600;
 }
 
@@ -416,14 +416,14 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #7BAF7A;
+  color: #A8CABA;
   margin-bottom: 12px;
   font-family: 'Lora', Georgia, serif;
 }
 
 .section-title {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #1E3A2F;
+  color: #2A4D3C;
   margin-bottom: 16px;
 }
 
@@ -511,7 +511,7 @@ p:last-child { margin-bottom: 0; }
 .stap-nr {
   width: 36px;
   height: 36px;
-  background: #7BAF7A;
+  background: #A8CABA;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -526,7 +526,7 @@ p:last-child { margin-bottom: 0; }
 .pgb-stap-tekst h4 {
   font-size: 1rem;
   margin-bottom: 4px;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 .pgb-stap-tekst p {
@@ -545,10 +545,10 @@ p:last-child { margin-bottom: 0; }
 .pgb-visual blockquote {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.15rem;
-  color: #1E3A2F;
+  color: #2A4D3C;
   font-style: italic;
   line-height: 1.7;
-  border-left: 3px solid #7BAF7A;
+  border-left: 3px solid #A8CABA;
   padding-left: 20px;
   margin-bottom: 20px;
 }
@@ -591,7 +591,7 @@ p:last-child { margin-bottom: 0; }
   left: 0;
   width: 4px;
   height: 100%;
-  background: #7BAF7A;
+  background: #A8CABA;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.25s;
@@ -612,7 +612,7 @@ p:last-child { margin-bottom: 0; }
 
 .dienst-kaart h3 {
   margin-bottom: 10px;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 .dienst-kaart p {
@@ -639,7 +639,7 @@ p:last-child { margin-bottom: 0; }
 
 .dienst-lijst li::before {
   content: '✓';
-  color: #7BAF7A;
+  color: #A8CABA;
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 1px;
@@ -650,7 +650,7 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   gap: 6px;
   background: #EFF7EE;
-  color: #4A8A5A;
+  color: #3D7A5A;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 4px 10px;
@@ -695,7 +695,7 @@ p:last-child { margin-bottom: 0; }
 .voor-wie-kaart h3 {
   font-size: 1rem;
   margin-bottom: 6px;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 .voor-wie-kaart p {
@@ -709,7 +709,7 @@ p:last-child { margin-bottom: 0; }
    CTA BANNER
    ============================================= */
 .cta-banner {
-  background: linear-gradient(135deg, #4A8A5A 0%, #2E6645 100%);
+  background: linear-gradient(135deg, #3D7A5A 0%, #2A4D3C 100%);
   padding: 72px 0;
   text-align: center;
   position: relative;
@@ -747,7 +747,7 @@ p:last-child { margin-bottom: 0; }
 
 .btn-wit {
   background: white;
-  color: #2E6645;
+  color: #2A4D3C;
   font-weight: 700;
 }
 
@@ -800,7 +800,7 @@ p:last-child { margin-bottom: 0; }
 
 .foto-kaart-info h3 {
   font-size: 1.2rem;
-  color: #1E3A2F;
+  color: #2A4D3C;
   margin-bottom: 4px;
 }
 
@@ -820,7 +820,7 @@ p:last-child { margin-bottom: 0; }
 .kwaliteit-tag {
   background: white;
   border: 1px solid rgba(123, 175, 122, 0.4);
-  color: #4A8A5A;
+  color: #3D7A5A;
   font-size: 0.78rem;
   font-weight: 600;
   padding: 5px 12px;
@@ -840,7 +840,7 @@ p:last-child { margin-bottom: 0; }
 
 .citaat {
   background: #EFF7EE;
-  border-left: 4px solid #7BAF7A;
+  border-left: 4px solid #A8CABA;
   border-radius: 0 12px 12px 0;
   padding: 24px 28px;
   margin: 32px 0;
@@ -850,7 +850,7 @@ p:last-child { margin-bottom: 0; }
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.1rem;
   font-style: italic;
-  color: #2E6645;
+  color: #2A4D3C;
   margin-bottom: 0;
   line-height: 1.7;
 }
@@ -892,7 +892,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .contact-stap .stap-nr {
-  background: #E8894A;
+  background: #FF9F1C;
 }
 
 .contact-detail {
@@ -930,7 +930,7 @@ p:last-child { margin-bottom: 0; }
 .formulier-kaart h3 {
   font-size: 1.3rem;
   margin-bottom: 6px;
-  color: #1E3A2F;
+  color: #2A4D3C;
 }
 
 .formulier-kaart .kaart-sub {
@@ -956,7 +956,7 @@ p:last-child { margin-bottom: 0; }
 .pgb-radio input[type="radio"] {
   width: 18px;
   height: 18px;
-  accent-color: #7BAF7A;
+  accent-color: #A8CABA;
   flex-shrink: 0;
 }
 
@@ -1000,7 +1000,7 @@ p:last-child { margin-bottom: 0; }
    FOOTER
    ============================================= */
 footer {
-  background: #1E3A2F;
+  background: #2A4D3C;
   color: rgba(255,255,255,0.75);
   padding: 56px 0 32px;
 }
@@ -1027,7 +1027,7 @@ footer {
 .footer-logo-leaf {
   width: 30px;
   height: 30px;
-  background: #7BAF7A;
+  background: #A8CABA;
   border-radius: 50% 10% 50% 10%;
 }
 
@@ -1057,7 +1057,7 @@ footer h4 {
   transition: color 0.2s;
 }
 
-.footer-links a:hover { color: #7BAF7A; }
+.footer-links a:hover { color: #A8CABA; }
 
 .footer-contact-item {
   display: flex;
