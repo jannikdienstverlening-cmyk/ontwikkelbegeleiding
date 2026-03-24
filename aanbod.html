@@ -3,16 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#7BAF7A">
+  <meta name="theme-color" content="#A8CABA">
   <title>Aanbod | Ontwikkel Begeleiding</title>
-  <meta name="description" content="Bekijk het volledige aanbod van Rianne: PGB-begeleiding thuis en op school, gedragsregulatie, sociale vaardigheden en onderwijsondersteuning. Via PGB Jeugdwet.">
+  <meta name="description" content="Bekijk het volledige aanbod van Rianne: PGB-begeleiding thuis en op school, gedragsregulatie, sociale vaardigheden en onderwijsondersteuning. Altijd via PGB Jeugdwet.">
   <link rel="canonical" href="https://ontwikkelbegeleiding.nl/aanbod">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237BAF7A'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='18'>🌱</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23A8CABA'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='18'>🌱</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .dienst-blok {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 56px;
+      align-items: center;
+      padding: 64px 0;
+      border-bottom: 1px solid #EDE8E0;
+    }
+    .dienst-blok.omgekeerd {
+      grid-template-columns: 420px 1fr;
+    }
+    .dienst-blok.omgekeerd .dienst-tekst { order: 2; }
+    .dienst-blok.omgekeerd .dienst-beeld  { order: 1; }
+    .dienst-blok:last-child { border-bottom: none; }
+
+    .dienst-blok h3 {
+      font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+      margin-bottom: 16px;
+    }
+    .dienst-blok p {
+      font-size: 1rem;
+      line-height: 1.9;
+      margin-bottom: 14px;
+    }
+
+    .check-lijst {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .check-lijst li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #3A3A3A;
+      line-height: 1.55;
+    }
+    .check-lijst li::before {
+      content: '✓';
+      color: #A8CABA;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .dienst-beeld {
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .beeld-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.82rem;
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    @media (max-width: 860px) {
+      .dienst-blok,
+      .dienst-blok.omgekeerd {
+        grid-template-columns: 1fr;
+      }
+      .dienst-blok.omgekeerd .dienst-tekst { order: 1; }
+      .dienst-blok.omgekeerd .dienst-beeld  { order: 2; }
+      .dienst-beeld { aspect-ratio: 16/9; }
+    }
+  </style>
 </head>
 <body>
 
@@ -20,7 +102,7 @@
   <div class="container nav-inner">
     <a href="/" class="logo">
       <div class="logo-leaf"></div>
-      Ontwikkel<span style="color:#7BAF7A;"> Begeleiding</span>
+      Ontwikkel<span style="color:#A8CABA;"> Begeleiding</span>
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="/over-mij">Over Rianne</a></li>
@@ -39,114 +121,115 @@
 </div>
 
 <!-- PAGINA HERO -->
-<section class="pagina-hero">
-  <div class="container" data-fade>
+<section style="padding:80px 0 72px;background:linear-gradient(160deg,#EFF7EE 0%,#F5F0E8 100%);">
+  <div class="container" style="text-align:center;" data-fade>
     <div class="sectie-label">Wat ik doe</div>
-    <h1>Hoe ik jullie kan helpen</h1>
-    <p>Geen standaardpakket. Ik stem mijn begeleiding af op jouw kind en jullie gezin — altijd via het PGB Jeugdwet.</p>
+    <h1 style="margin-bottom:20px;">Aanbod</h1>
+    <p style="font-size:1.2rem;color:#4A4A4A;max-width:540px;margin:0 auto 36px;line-height:1.85;">
+      Geen standaardpakket. Ik stem alles af op jouw kind en jullie gezin — altijd via jouw PGB Jeugdwet.
+    </p>
+    <a href="/contact" class="btn btn-primair">Plan een vrijblijvend kennismakingsgesprek &rarr;</a>
   </div>
 </section>
 
-<!-- HERKENNING BALK -->
-<section style="padding:48px 0;background:white;border-bottom:1px solid #EDE8E0;">
-  <div class="container" data-fade>
-    <div style="max-width:680px;">
-      <p style="font-size:1.1rem;line-height:1.95;color:#3A3A3A;font-family:'Playfair Display',Georgia,serif;font-style:italic;">"Jij weet wat er speelt bij jullie thuis. Ik breng de kennis en aanpak mee. Samen kijken we welke begeleiding het beste past — nooit meer dan nodig, altijd precies genoeg."</p>
-      <p style="font-size:0.88rem;color:#888;margin-top:8px;">— Rianne</p>
-    </div>
-  </div>
-</section>
-
-<!-- DIENSTEN UITGEBREID -->
-<section style="padding:72px 0;background:white;">
+<!-- DIENSTEN -->
+<section style="padding:0 0 80px;background:white;">
   <div class="container">
 
+    <h2 class="section-title" style="text-align:center;padding-top:72px;margin-bottom:0;" data-fade>Hoe ik jullie kan helpen</h2>
+
     <!-- DIENST 1 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:72px;" data-fade>
-      <div>
+    <div class="dienst-blok" data-fade>
+      <div class="dienst-tekst">
         <div class="sectie-label">Dienst 01</div>
-        <h2 class="section-title" style="margin-bottom:20px;">Integrale PGB-begeleiding thuis en op school</h2>
-        <p>Via jouw PGB Jeugdwet bied ik professionele, één-op-één begeleiding. Ik kom bij jullie thuis, schakel met school en ben aanwezig waar jouw kind mij het meest nodig heeft.</p>
-        <p>Ik stel de zorgovereenkomst samen met je op en zorg dat alles correct geregeld is — zodat jij je alleen maar hoeft te focussen op je kind.</p>
-        <ul class="dienst-lijst" style="margin-top:8px;">
-          <li>Begeleiding op maat, afgestemd op de zorgvraag in het indicatiebesluit</li>
-          <li>Samenwerking met ouders als gelijkwaardige partners</li>
-          <li>Transparante verslaglegging en communicatie</li>
+        <h3>Integrale PGB-begeleiding thuis en op school</h3>
+        <p>Via jouw PGB Jeugdwet bied ik professionele, één-op-één begeleiding. Ik kom bij jullie thuis, schakel met school en ben precies daar waar jouw kind mij op dat moment het hardst nodig heeft.</p>
+        <p>Samen maken we één duidelijke lijn tussen thuis en school — zodat jouw kind eindelijk kan groeien op zijn eigen tempo.</p>
+        <ul class="check-lijst">
+          <li>Begeleiding volledig afgestemd op de zorgvraag in jullie indicatie</li>
+          <li>Ouders en ik als gelijkwaardige partners</li>
+          <li>Transparante verslaglegging en heldere communicatie</li>
           <li>Zorgovereenkomst conform model 2026</li>
-          <li>Tarief passend voor professionele begeleiding Jeugdwet 2026</li>
-          <li>Ik help je door het hele PGB-proces</li>
+          <li>Tarief passend binnen de maximale PGB-tarieven 2026</li>
         </ul>
         <span class="pgb-tag" style="margin-top:20px;">✓ Via PGB Jeugdwet</span>
       </div>
-      <div style="background:linear-gradient(135deg,#EFF7EE,#D4EBD3);border-radius:20px;height:320px;display:flex;align-items:center;justify-content:center;">
-        <span style="font-size:5rem;">🌿</span>
+      <div class="dienst-beeld" style="background:linear-gradient(135deg,#EFF7EE,#C8E0C7);">
+        <!-- Vervang door: <img src="/images/dienst-thuis-school.jpg" alt="Rianne begeleidt kind thuis en op school"> -->
+        <div class="beeld-placeholder" style="color:#4A8A5A;">
+          <span style="font-size:3.5rem;">🌿</span>
+          <span style="color:#A8CABA;">foto: kind + begeleider thuis/school</span>
+        </div>
       </div>
     </div>
-
-    <hr style="border:none;border-top:1px solid #E8E0D4;margin-bottom:72px;">
 
     <!-- DIENST 2 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:72px;" data-fade>
-      <div style="background:linear-gradient(135deg,#FDF4EE,#FAE3D0);border-radius:20px;height:320px;display:flex;align-items:center;justify-content:center;">
-        <span style="font-size:5rem;">🏠</span>
+    <div class="dienst-blok omgekeerd" data-fade>
+      <div class="dienst-beeld" style="background:linear-gradient(135deg,#FDF4EE,#FAE3D0);">
+        <!-- Vervang door: <img src="/images/dienst-structuur-thuis.jpg" alt="Structuur en rust thuis"> -->
+        <div class="beeld-placeholder" style="color:#C47A3A;">
+          <span style="font-size:3.5rem;">🏠</span>
+          <span style="color:#E8B88A;">foto: warm thuismoment, rust</span>
+        </div>
       </div>
-      <div>
+      <div class="dienst-tekst">
         <div class="sectie-label">Dienst 02</div>
-        <h2 class="section-title" style="margin-bottom:20px;">Structuur thuis & ontlasting voor ouders</h2>
-        <p>Ochtenden die ontsporen. Huiswerkmomenten vol frustratie. Overgangen die steeds weer mislopen. Ik kom bij jullie thuis en help om rust en regelmaat te brengen — voor je kind én voor jou.</p>
-        <p>Jij hoeft het wiel niet opnieuw uit te vinden. Ik doe het samen met je.</p>
-        <ul class="dienst-lijst" style="margin-top:8px;">
-          <li>Dagelijkse structuur opbouwen en onderhouden</li>
-          <li>Ondersteuning bij vaste momenten: opstaan, eten, huiswerk, slapen</li>
-          <li>Praktische handvatten en tips voor ouders</li>
-          <li>Minder spanning thuis, meer ruimte voor gewone gezinsmomentjes</li>
-          <li>Ouders versterken in hun eigen rol</li>
+        <h3>Structuur thuis & ontlasting voor ouders</h3>
+        <p>Ochtenden die ontsporen. Huiswerk dat eindeloos duurt. Avonden vol strijd. Ik kom bij jullie thuis en help rust en regelmaat te brengen — voor je kind én voor jou.</p>
+        <p>Jij hoeft het wiel niet opnieuw uit te vinden. Samen bouwen we structuur op, zodat er weer ruimte komt voor gewone gezinsmomenten.</p>
+        <ul class="check-lijst">
+          <li>Dagelijkse routines opbouwen en vasthouden</li>
+          <li>Hulp bij lastige momenten: opstaan, eten, huiswerk, slapen</li>
+          <li>Praktische handvatten en tips speciaal voor jou als ouder</li>
+          <li>Minder spanning, meer energie voor het hele gezin</li>
         </ul>
         <span class="pgb-tag" style="margin-top:20px;">✓ Via PGB Jeugdwet</span>
       </div>
     </div>
-
-    <hr style="border:none;border-top:1px solid #E8E0D4;margin-bottom:72px;">
 
     <!-- DIENST 3 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:72px;" data-fade>
-      <div>
+    <div class="dienst-blok" data-fade>
+      <div class="dienst-tekst">
         <div class="sectie-label">Dienst 03</div>
-        <h2 class="section-title" style="margin-bottom:20px;">Gedragsregulatie & sociale vaardigheden</h2>
-        <p>Sommige kinderen vinden het lastig om hun emoties te reguleren, vriendschappen op te bouwen of met teleurstellingen om te gaan. Dat werk ik aan — spelenderwijs, zonder druk, in een veilige vertrouwensrelatie.</p>
-        <p>Leren omgaan met de wereld — op jouw manier, op jouw tempo.</p>
-        <ul class="dienst-lijst" style="margin-top:8px;">
-          <li>Inzicht in eigen emoties en gedragspatronen</li>
+        <h3>Gedragsregulatie & sociale vaardigheden</h3>
+        <p>Emoties die hoog oplopen. Moeite met vriendschappen. Teleurstellingen die hard aankomen. Ik werk hieraan spelenderwijs, in een veilige vertrouwensrelatie.</p>
+        <p>Jouw kind leert zichzelf beter kennen en krijgt meer zelfvertrouwen — op zijn eigen tempo.</p>
+        <ul class="check-lijst">
+          <li>Inzicht in eigen emoties en gedrag</li>
           <li>Omgaan met prikkels, frustratie en teleurstelling</li>
-          <li>Sociale situaties begrijpen en stap voor stap oefenen</li>
+          <li>Sociale situaties stap voor stap oefenen</li>
           <li>Groeiend zelfvertrouwen en een positiever zelfbeeld</li>
-          <li>Veilige, vertrouwde omgeving om te leren</li>
         </ul>
         <span class="pgb-tag" style="margin-top:20px;">✓ Via PGB Jeugdwet</span>
       </div>
-      <div style="background:linear-gradient(135deg,#FFFBEE,#FFF2C4);border-radius:20px;height:320px;display:flex;align-items:center;justify-content:center;">
-        <span style="font-size:5rem;">💛</span>
+      <div class="dienst-beeld" style="background:linear-gradient(135deg,#FFFBEE,#FFF2C4);">
+        <!-- Vervang door: <img src="/images/dienst-gedrag-sociaal.jpg" alt="Gedragsregulatie en sociale vaardigheden"> -->
+        <div class="beeld-placeholder" style="color:#B8960A;">
+          <span style="font-size:3.5rem;">💛</span>
+          <span style="color:#D4B84A;">foto: kind speelt, lacht, zelfvertrouwen</span>
+        </div>
       </div>
     </div>
-
-    <hr style="border:none;border-top:1px solid #E8E0D4;margin-bottom:72px;">
 
     <!-- DIENST 4 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;" data-fade>
-      <div style="background:linear-gradient(135deg,#EEF2FF,#DBEAFE);border-radius:20px;height:320px;display:flex;align-items:center;justify-content:center;">
-        <span style="font-size:5rem;">📚</span>
+    <div class="dienst-blok omgekeerd" data-fade>
+      <div class="dienst-beeld" style="background:linear-gradient(135deg,#EEF2FF,#DBEAFE);">
+        <!-- Vervang door: <img src="/images/dienst-school.jpg" alt="Ondersteuning op school"> -->
+        <div class="beeld-placeholder" style="color:#4A6AAA;">
+          <span style="font-size:3.5rem;">📚</span>
+          <span style="color:#8AAAD4;">foto: kind aan het werk op school</span>
+        </div>
       </div>
-      <div>
+      <div class="dienst-tekst">
         <div class="sectie-label">Dienst 04</div>
-        <h2 class="section-title" style="margin-bottom:20px;">Ondersteuning op school</h2>
-        <p>Veel kinderen lopen vast op school zonder dat ouders precies weten waarom — of hoe ze kunnen helpen. Ik schakel in tussen thuis en school, zodat er één lijn is.</p>
-        <p>School en thuis, naadloos verbonden.</p>
-        <ul class="dienst-lijst" style="margin-top:8px;">
-          <li>Ondersteuning bij planning, concentratie en werkhouding</li>
-          <li>Contact en afstemming met school (leerkrachten, IB, zorgcoördinator)</li>
-          <li>Begeleiding bij huiswerk of schoolse taken wanneer nodig</li>
-          <li>Samen zorgen dat school een veilige, haalbare plek voelt</li>
-          <li>Één duidelijke aanpak voor thuis én school</li>
+        <h3>Ondersteuning op school</h3>
+        <p>Veel kinderen lopen vast op school zonder dat je precies weet waarom. Ik schakel tussen thuis en school, zodat er eindelijk één duidelijke lijn is.</p>
+        <p>School wordt weer een veilige, haalbare plek.</p>
+        <ul class="check-lijst">
+          <li>Hulp bij planning, concentratie en werkhouding</li>
+          <li>Afstemming met leerkrachten, IB en zorgcoördinator</li>
+          <li>Begeleiding bij huiswerk of schoolse taken</li>
+          <li>Één aanpak voor thuis én school</li>
         </ul>
         <span class="pgb-tag" style="margin-top:20px;">✓ Via PGB Jeugdwet</span>
       </div>
@@ -155,22 +238,29 @@
   </div>
 </section>
 
-<!-- PGB INFO BALK -->
-<section style="padding:48px 0;background:#EFF7EE;" data-fade>
-  <div class="container" style="text-align:center;">
+<!-- PGB SECTIE -->
+<section style="padding:72px 0;background:#EFF7EE;">
+  <div class="container" style="text-align:center;max-width:720px;" data-fade>
     <div class="sectie-label">Hoe werkt het</div>
-    <h2 class="section-title" style="margin-bottom:16px;">Alles via jouw PGB Jeugdwet</h2>
-    <p style="max-width:620px;margin:0 auto 28px;color:#5A5A5A;">Heb je een PGB maar weet je niet zeker of je mijn begeleiding daarmee kunt inkopen? Vraag het gewoon — ik denk graag met je mee en leg alles helder uit, inclusief de zorgovereenkomst en de tarieven 2026.</p>
-    <a href="/contact" class="btn btn-primair">Stel gerust je vraag &rarr;</a>
+    <h2 class="section-title" style="margin-bottom:20px;">Alles via jouw PGB Jeugdwet</h2>
+    <p style="font-size:1.05rem;line-height:1.9;color:#5A5A5A;margin-bottom:8px;">
+      Heb je een PGB maar weet je niet zeker of je mijn begeleiding daarmee kunt inkopen? Vraag het gerust.
+    </p>
+    <p style="font-size:1.05rem;line-height:1.9;color:#5A5A5A;">
+      Ik leg alles helder uit — inclusief de zorgovereenkomst (model 2026) en de tarieven die passen binnen de maximale PGB-tarieven van jouw gemeente.
+    </p>
+    <a href="/contact" class="btn btn-primair" style="margin-top:32px;">Stel gerust je vraag of plan een gesprek &rarr;</a>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <div class="container" data-fade>
-    <h2>Wil je weten wat het beste past bij jullie?</h2>
-    <p>In een vrijblijvend kennismakingsgesprek kijken we samen welke begeleiding het meest aansluit bij jouw kind en gezin.</p>
-    <a href="/contact" class="btn btn-wit">Plan een gratis kennismakingsgesprek</a>
+<!-- LAATSTE CTA -->
+<section style="padding:72px 0;background:white;border-top:1px solid #EDE8E0;">
+  <div class="container" style="text-align:center;max-width:680px;" data-fade>
+    <h2 class="section-title" style="margin-bottom:16px;">Wil je weten wat het beste past bij jullie?</h2>
+    <p style="font-size:1.05rem;color:#5A5A5A;line-height:1.9;">
+      In een vrijblijvend kennismakingsgesprek kijken we samen welke begeleiding het meest aansluit bij jouw kind en gezin.
+    </p>
+    <a href="/contact" class="btn btn-primair" style="margin-top:32px;">Plan jouw vrijblijvende kennismaking &rarr;</a>
   </div>
 </section>
 
@@ -196,6 +286,9 @@
         <div class="footer-contact-item"><span>📞</span><span>[Telefoonnummer]</span></div>
         <div class="footer-contact-item"><span>📧</span><span>[E-mailadres]</span></div>
         <div class="footer-contact-item"><span>📍</span><span>Regio Veenendaal (30 km)</span></div>
+        <div style="margin-top:16px;font-size:0.8rem;color:rgba(255,255,255,0.4);line-height:1.9;">
+          KvK: [nummer]<br>AGB-code: [code]<br>VOG aanwezig
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -215,7 +308,7 @@
   const faders = document.querySelectorAll('[data-fade]');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('zichtbaar'); observer.unobserve(e.target); }});
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1 });
   faders.forEach(f => observer.observe(f));
 </script>
 </body>
