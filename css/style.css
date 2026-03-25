@@ -147,25 +147,8 @@ p:last-child { margin-bottom: 0; }
   transition: 0.3s;
 }
 
-/* --- MOBIELE STICKY CTA --- */
-.sticky-cta-mob {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  padding: 12px 20px;
-  background: #FF9F1C;
-  text-align: center;
-}
-
-.sticky-cta-mob a {
-  color: white;
-  font-weight: 700;
-  font-size: 0.95rem;
-  font-family: 'Lora', Georgia, serif;
-}
+/* --- MOBIELE STICKY CTA (uitgeschakeld) --- */
+.sticky-cta-mob { display: none !important; }
 
 /* =============================================
    KNOPPEN
@@ -318,7 +301,7 @@ p:last-child { margin-bottom: 0; }
 
 .kaart-sub {
   font-size: 0.88rem;
-  color: #888;
+  color: #666;
   margin-bottom: 24px;
 }
 
@@ -340,7 +323,7 @@ p:last-child { margin-bottom: 0; }
 .form-group select {
   width: 100%;
   padding: 12px 16px;
-  border: 1.5px solid #E0DAD0;
+  border: 1.5px solid #C8C0B4;
   border-radius: 10px;
   font-family: 'Lora', Georgia, serif;
   font-size: 0.92rem;
@@ -555,7 +538,7 @@ p:last-child { margin-bottom: 0; }
 
 .pgb-visual cite {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   font-style: normal;
 }
 
@@ -577,7 +560,7 @@ p:last-child { margin-bottom: 0; }
 .dienst-kaart {
   background: white;
   border-radius: 16px;
-  padding: 32px 28px;
+  padding: 28px 28px;
   border: 1.5px solid transparent;
   transition: all 0.25s;
   position: relative;
